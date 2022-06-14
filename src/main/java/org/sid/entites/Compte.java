@@ -31,7 +31,7 @@ discriminatorType = DiscriminatorType.STRING, length = 2)
 @ToString
 public abstract class Compte implements Serializable {
 	@Id
-	private String code;
+	private String codeCpte;
 	private Date dateCreation;
 	private double solde;
 	@ManyToOne
@@ -45,16 +45,16 @@ public abstract class Compte implements Serializable {
 	}
 	public Compte(String code, Date dateCreation, double solde, Client client) {
 		super();
-		this.code = code;
+		this.codeCpte = code;
 		this.dateCreation = dateCreation;
 		this.solde = solde;
 		this.client = client;
 	}
-	public String getCode() {
-		return code;
+	public String getCodeCpte() {
+		return codeCpte;
 	}
-	public void setCode(String code) {
-		this.code = code;
+	public void setCodeCpte(String code) {
+		this.codeCpte = code;
 	}
 	public Date getDateCreation() {
 		return dateCreation;

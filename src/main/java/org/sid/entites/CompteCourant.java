@@ -31,6 +31,24 @@ public class CompteCourant extends Compte {
 		super(code, dateCreation, solde, client);
 		this.decouvert = decouvert;
 	}
+
+	public CompteCourant(String code, Date dateCreation, double solde, Client client) {
+		super(code, dateCreation, solde, client);
+		// TODO Auto-generated constructor stub
+	}
+
+	public CompteCourant(double decouvert) {
+		super();
+		this.decouvert = decouvert;
+	}
+
+	public double getDecouvert() {
+		return decouvert;
+	}
+
+	public void setDecouvert(double decouvert) {
+		this.decouvert = decouvert;
+	}
 	
 	
 }
